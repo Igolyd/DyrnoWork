@@ -1,0 +1,26 @@
+﻿<Application x:Class="Dyrno.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:Dyrno"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <Style x:Key="ListBoxStyle" TargetType="{x:Type ListBox}">
+            <Setter Property="VerticalAlignment" Value="Top"/>
+            <Setter Property="FontSize" Value="20"/>
+            <Setter Property="Height" Value="200"/>
+        </Style>
+        <Style x:Key="BorderTitle" TargetType="{x:Type Border}">
+            <Setter Property="VerticalAlignment" Value="Top"/>
+            <Setter Property="Height" Value="20"/>
+        </Style>
+        <Style x:Key="Title" TargetType="{x:Type Label}">
+            <Setter Property="HorizontalAlignment" Value="Center"/>
+            <Setter Property="Height" Value="50"/>
+        </Style>
+        <Style x:Key="Find" TargetType="{x:Type Button}">
+            <Setter Property="VerticalAlignment" Value="Center"/>
+            <Setter Property="Height" Value="50"/>
+            <Setter Property="Width" Value="200"/>
+        </Style>
+    </Application.Resources>
+</Application>

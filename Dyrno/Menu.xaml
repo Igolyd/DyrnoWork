@@ -1,0 +1,52 @@
+﻿<Page x:Class="Dyrno.Menu"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:local="clr-namespace:Dyrno"
+      mc:Ignorable="d" 
+      d:DesignHeight="450" d:DesignWidth="800"
+      Title="Menu">
+
+    <Grid>
+        <Grid.Background>
+            White
+        </Grid.Background>
+        <Border Style="{StaticResource BorderTitle}" BorderThickness="0,2,0,1" Height="24">
+            <Border.BorderBrush>
+                <LinearGradientBrush>
+                    <GradientStop Color="#000428" Offset="0" />
+                    <GradientStop Color="#004e92" Offset="0.25" />
+                    <GradientStop Color="Blue" Offset="0.75" />
+                </LinearGradientBrush>
+            </Border.BorderBrush>
+            <Label Style="{StaticResource Title}" Background="{x:Null}">
+                <Label.Content>
+                    Stats of make Detail
+                </Label.Content>
+                <Label.Foreground>
+                    <LinearGradientBrush>
+                        <GradientStop Color="#000428" Offset="0" />
+                        <GradientStop Color="#004e92" Offset="0.25" />
+                        <GradientStop Color="Blue" Offset="0.75" />
+                        <GradientStop Color="#243b55" Offset="1.0" />
+                    </LinearGradientBrush>
+                </Label.Foreground>
+            </Label>
+
+        </Border>
+        <Button Style="{StaticResource Find}" FontSize="12" Name="Find" Click="Find_Click">
+            <Button.Content>
+                Посмотреть собранные детали
+            </Button.Content>
+            <Button.Foreground>
+                <LinearGradientBrush>
+                    <GradientStop Color="#000428" Offset="0" />
+                    <GradientStop Color="#004e92" Offset="0.25" />
+                    <GradientStop Color="Blue" Offset="0.75" />
+                    <GradientStop Color="#243b55" Offset="1.0" />
+                </LinearGradientBrush>
+            </Button.Foreground>
+        </Button>
+    </Grid>
+</Page>
